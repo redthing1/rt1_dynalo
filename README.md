@@ -1,3 +1,13 @@
+# rt1_dynalo
+
+## usage: macos
+
+```sh
+meson setup build-macos
+ninja -C build-macos
+./build-macos/test/dynalo_test_loader ./build-macos/test
+```
+
 # dynalo: dynamic loading of shared libraries
 
 dynalo is a header-only library that provides a cross platform API for:

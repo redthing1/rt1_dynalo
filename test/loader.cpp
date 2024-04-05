@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
         std::cerr << "usage: loader <path/to/shared/lib/dir>" << std::endl;
         return 1;
     }
-    auto shared_lib_path = std::string(argv[1]) + "/" + dynalo::to_native_name("shared");
+    auto shared_lib_path = std::string(argv[1]) + "/" + dynalo::to_native_name("dynalo_test_shlib");
     std::cout << "loading shared library: " << shared_lib_path << std::endl;
     dynalo::library lib(shared_lib_path);
 
